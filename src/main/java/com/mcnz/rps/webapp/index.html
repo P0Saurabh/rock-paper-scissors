@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+  <h1>Rock-Paper-Scissors</h1>
+  <p>Select your move and play against the server.</p>
+
+  <form action="play" method="get">
+    <label>
+      Your Choice:
+      <select name="choice" required>
+        <option value="ROCK">ROCK</option>
+        <option value="PAPER">PAPER</option>
+        <option value="SCISSORS">SCISSORS</option>
+      </select>
+    </label>
+    <button type="submit">Play</button>
+  </form>
+
+  <p>Or hit the API directly: <code>/app/play?choice=ROCK</code></p>
+</body>
+</html>
